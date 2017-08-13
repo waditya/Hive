@@ -18,3 +18,11 @@ stored as textfile;
 --to /user/hive/warehouse/transactions path
 
 load data inpath '/user/cloudera/Transactions.csv' into table transactions;
+
+--Create external tables
+
+create table transactions (AcctNo string, PartNo string, Price decimal(9,2), Qty int)
+row format delimited
+fields terminated by ','
+stored as textfile;
+
