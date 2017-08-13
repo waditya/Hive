@@ -14,4 +14,7 @@ stored as textfile;
 
 -- Query to load data from a file
 
+--This query creates an internal Hive table and moves the Transactions.csv file from /user/cloudera 
+--to /user/hive/warehouse/rsk.db/transactions path
+
 load data inpath '/user/cloudera/Transactions.csv' into table transactions;
